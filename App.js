@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { NavigationContainer } from '@react-navigation/native'
 import { FontAwesome } from '@expo/vector-icons';
-import { faGear, faHome, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faBarChart } from '@fortawesome/free-regular-svg-icons';
 import Home from './pages/Home';
 import Stats from './pages/Stats';
@@ -71,10 +70,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tabs.Navigator screenOptions={{headerStyle: {backgroundColor: "#1E1E1E"}, headerShadowVisible: false, headerTitleStyle: { color: "white"}}} initialRouteName='Home' tabBar={(props) => <MyTabBar {...props} />}>
-        <Tabs.Screen  name="Home" options={{icon: faHome}} children={Home}></Tabs.Screen>
-        <Tabs.Screen name="Statistics" options={{icon: faBarChart}} children={Stats}></Tabs.Screen>
-        <Tabs.Screen name="Settings" options={{icon: faGear}} children={Settings}></Tabs.Screen>
-        <Tabs.Screen name="Search" options={{icon: faMagnifyingGlass}} children={Search}></Tabs.Screen>
+        <Tabs.Screen  name="Home" options={{icon: "home"}} children={Home}></Tabs.Screen>
+        <Tabs.Screen name="Statistics" options={{icon: "bar-chart"}} children={Stats}></Tabs.Screen>
+        <Tabs.Screen name="Settings" options={{icon: "gear"}} children={Settings}></Tabs.Screen>
+        <Tabs.Screen name="Search" options={{icon: "magnifying-glass"}} children={Search}></Tabs.Screen>
       </Tabs.Navigator>
     </NavigationContainer>
   );

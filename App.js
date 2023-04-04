@@ -16,7 +16,6 @@ function MyTabBar({ state, descriptors, navigation }) {
     <View style={{ flexDirection: 'row', backgroundColor:'#1E1E1E' }}>
       {state.routes.map((route, index) => {
         const selected = state.index == index
-        console.log(selected)
         const { options } = descriptors[route.key];
         const label =
           options.tabBarLabel !== undefined

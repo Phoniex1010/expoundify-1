@@ -73,7 +73,7 @@ export default function App() {
         <Tabs.Screen  name="Home" options={{icon: "home"}} children={Home}></Tabs.Screen>
         <Tabs.Screen name="Statistics" options={{icon: "bar-chart"}} children={Stats}></Tabs.Screen>
         <Tabs.Screen name="Settings" options={{icon: "gear"}} children={Settings}></Tabs.Screen>
-        <Tabs.Screen name="Search" options={{icon: "magnifying-glass"}} children={Search}></Tabs.Screen>
+        <Tabs.Screen name="Search" options={{icon: "search"}} children={Search}></Tabs.Screen>
       </Tabs.Navigator>
     </NavigationContainer>
   );

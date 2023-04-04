@@ -5,7 +5,7 @@ import React from "react";
 export default function Home() {
     return (
         <View style={[defaultStyles.container, {justifyContent: 'center',  alignItems: 'center',}]}>
-            <TouchableOpacity style={[styles.button, {width: '50%', }]} activeOpacity={0.6}>
+            <TouchableOpacity style={[styles.button, {width: '50%',}]} activeOpacity={0.6}>
                 <Text style={{color: 'black'}}>Article</Text>
             </TouchableOpacity>
         </View>

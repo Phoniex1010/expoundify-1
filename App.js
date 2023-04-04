@@ -57,7 +57,7 @@ function MyTabBar({ state, descriptors, navigation }) {
             onLongPress={onLongPress}
             style={{ flex: 1, padding: 12 }}
           >
-            <FontAwesome icon={options.icon} color={selected ? "#0466c8" : "white"} size={'xl'} />
+            <FontAwesome name={options.icon} color={selected ? "#0466c8" : "white"} size={32} />
           </TouchableOpacity>
         );
       })}

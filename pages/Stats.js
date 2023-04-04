@@ -5,7 +5,7 @@ import React from "react";
 export default function Stats() {
     return (
         <View style={defaultStyles.container}>
-            <Text>Statistics</Text>
+            <Text>Beep</Text>
         </View>
     )
 }

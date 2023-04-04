@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { NavigationContainer } from '@react-navigation/native'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesome } from '@expo/vector-icons';
 import { faGear, faHome, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faBarChart } from '@fortawesome/free-regular-svg-icons';
 import Home from './pages/Home';
@@ -58,7 +58,7 @@ function MyTabBar({ state, descriptors, navigation }) {
             onLongPress={onLongPress}
             style={{ flex: 1, padding: 12 }}
           >
-            <FontAwesomeIcon icon={options.icon} color={selected ? "#0466c8" : "white"} size={'xl'} />
+            <FontAwesome icon={options.icon} color={selected ? "#0466c8" : "white"} size={'xl'} />
           </TouchableOpacity>
         );
       })}

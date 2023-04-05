@@ -54,7 +54,7 @@ function MyTabBar({ state, descriptors, navigation }) {
             testID={options.tabBarTestID}
             onPress={onPress}
             onLongPress={onLongPress}
-            style={{ flex: 1, padding: 12 }}
+            style={{ flex: 1, padding: 12, justifyContent: 'center', alignItems: 'center' }}
           >
             <FontAwesome name={options.icon} color={selected ? "#0466c8" : "white"} size={32} />
           </TouchableOpacity>
@@ -68,7 +68,7 @@ function MyTabBar({ state, descriptors, navigation }) {
 export default function App() {
   return (
     <NavigationContainer>
-      <Tabs.Navigator screenOptions={{headerStyle: {backgroundColor: "#1E1E1E"}, headerShadowVisible: false, headerTitleStyle: { color: "white"}}} initialRouteName='Home' tabBar={(props) => <MyTabBar {...props} />}>
+      <Tabs.Navigator screenOptions={{headerStyle: {backgroundColor: "#1E1E1E", }, headerShadowVisible: false, headerTitleStyle: { color: "white"}}} initialRouteName='Home' tabBar={(props) => <MyTabBar {...props} />}>
         <Tabs.Screen  name="Home" options={{icon: "home"}} children={Home}></Tabs.Screen>
         <Tabs.Screen name="Statistics" options={{icon: "bar-chart"}} children={Stats}></Tabs.Screen>
         <Tabs.Screen name="Settings" options={{icon: "gear"}} children={Settings}></Tabs.Screen>

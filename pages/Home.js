@@ -1,22 +1,14 @@
-import { Text, View, Button, StyleSheet, TouchableOpacity} from "react-native";
+import { Text, View, Button, StyleSheet, TouchableOpacity, FlatList} from "react-native";
 import { defaultStyles } from "../Globals";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Articles from "../Articles";
 
 export default function Home() {
     return (
-        <View style={[defaultStyles.container, {justifyContent: 'center',  alignItems: 'center',}]}>
-            <TouchableOpacity style={[styles.button, {width: '50%',}]} activeOpacity={0.6}>
-                <Text style={{color: 'black'}}>Article</Text>
-            </TouchableOpacity>
+        <View style={[defaultStyles.container, {alignItems:'center'}]}>
+            <View style={[{flex:1}]}>
+                <Articles />
+            </View>
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    button: {
-        paddingVertical: 18,
-        paddingHorizontal: 32,
-        borderRadius: 16,
-        backgroundColor: 'white'
-    }
-})

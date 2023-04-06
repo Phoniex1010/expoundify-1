@@ -19,7 +19,7 @@ export default class Articles extends React.Component {
     render() {
         return (
             <View style={styles.articlesContainer}>
-                {this.state.loading ? <Text>Loading</Text> : <FlatList data={this.state.articles} contentContainerStyle={{ flex: 1}} renderItem={(info) => <TouchableOpacity key={info.index} style={[styles.button, {flexDirection:'row'}]} activeOpacity={0.6}>
+                {this.state.loading ? <Text>Loading</Text> : <FlatList data={this.state.articles} contentContainerStyle={{ flex: 1, flexWrap:'wrap', flexDirection:'row',}} renderItem={(info) => <TouchableOpacity key={info.index} style={[styles.button, {}]} activeOpacity={0.6}>
                             <Text style={{color: 'black'}}>{info.item.title}</Text>
                         </TouchableOpacity>}></FlatList>} 
             </View>
